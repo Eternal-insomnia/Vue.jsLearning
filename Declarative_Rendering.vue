@@ -8,12 +8,12 @@ import { reactive } from 'vue'
   const counter = reactive({ // only works on objects (including arrays and built-in types such as Map & Set)
     count: 0
   })
-  counter.count++ // don't need .value
+  counter.count++ // don't needs .value
 </script>
 
 <template>
   <h1>Сделай меня динамическим!</h1>
-  <h1>{{message}}</h1>
+  <h1>{{message}}</h1> <!-- {{}} only for text interpolation (it's like changing key-word to something value) -->
   <p>Количество: {{counter.count}}</p>
   <p>{{message.split('').reverse().join('')}}</p>
 </template>
